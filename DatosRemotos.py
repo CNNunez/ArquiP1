@@ -84,8 +84,10 @@ def mail():
         result_time.append(time)
         n.append(i)
     print('END Test')
-    print("Numeros de muestra: " + n)
-    print("Tiempos medidos: " + result_time)
+    print("Numeros de muestra: ")
+    print(n)
+    print("Tiempos medidos: ")
+    print(result_time)
     print(" ")
 
     # Graficar resultados obtenidos
