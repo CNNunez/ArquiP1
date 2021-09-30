@@ -86,6 +86,7 @@ def mail():
     print('END Test')
     print("Numeros de muestra: " + n)
     print("Tiempos medidos: " + result_time)
+    print(" ")
 
     # Graficar resultados obtenidos
     graficar(n, result_time, 'Resultados Computadora A', 'r')
