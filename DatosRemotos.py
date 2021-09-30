@@ -22,7 +22,7 @@ def graficar(lista_n, lista_y, titulo, color):
     plt.plot(lista_n,lista_y,'-',linewidth=3,color=color)
     plt.grid()
     plt.xlabel('Numero de muestra (n)')
-    plt.ylabel('Tiempo (s)')
+    plt.ylabel('Tiempo (ms)')
     plt.title(titulo)
     plt.show()
 
@@ -57,7 +57,7 @@ def ReadEmail(user, pwd, ht, pp):
                 print(msg)
         server .quit()
         end = timer()
-        time = (end-start)*1000000000
+        time = (end-start)*1000
     except Exception as error:
         print (" -> ERROR: ", str(error))
     return time
@@ -66,7 +66,7 @@ def ReadEmail(user, pwd, ht, pp):
 
 def mail():
     # Variables
-    cantidad_Test = 10
+    cantidad_Test = 25
     result_time = []
     n = []
 
