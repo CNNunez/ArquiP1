@@ -44,12 +44,14 @@ def main():
     repeticiones = 100;
     tiempos = [];
     reps = [];
+    lista1 = [];
+    lista2 = [];
+    llenarLista(lista1);
+    llenarLista(lista2);
 
     for i in range(repeticiones):
-        lista1 = [];
-        lista2 = [];
-        llenarLista(lista1);
-        llenarLista(lista2);
+        a = lista1.copy();
+        b = lista2.copy();
 
         start = timer();
         Operaciones(lista1,lista2);
