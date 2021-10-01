@@ -54,7 +54,7 @@ def main():
         b = lista2.copy();
 
         start = timer();
-        Operaciones(lista1,lista2);
+        Operaciones(a,b);
         end = timer();
         time = (end-start);
         tiempos.append(round(time,5));
