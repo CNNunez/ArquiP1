@@ -61,5 +61,9 @@ def main():
         reps.append(i);
     
     graficar(reps,tiempos,"Prueba A",'r');
+    print("Numeros de Muestra:")
+    print(reps);
+    print("Tiempos medidos:")
+    print(tiempos);
 
 main();
