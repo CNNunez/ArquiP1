@@ -90,6 +90,11 @@ def mail():
     print(result_time)
     print(" ")
 
+
+
+
+    print("Hola mundo")
+
     # Graficar resultados obtenidos
     graficar(n, result_time, 'Resultados Computadora A', 'r')
 
