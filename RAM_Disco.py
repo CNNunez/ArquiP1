@@ -332,18 +332,20 @@ def draw_big_data():
     timeL = timeit.timeit(load_padron, number=1)
     timeL = "{:f}".format(timeL)
     print("Tiempo para cargar de disco duro a RAM 404MB: " + timeL)
+    print("")
 
-    timeXL = timeit.timeit(load_lorem1(), number=1)
+    timeXL = timeit.timeit(load_lorem1, number=1)
     timeXL = "{:f}".format(timeXL)
     print("Tiempo para cargar de disco duro a RAM 586MB: " + timeXL)
+    print("")
 
-    timeXXL = timeit.timeit(load_lorem2(), number=1)
+    timeXXL = timeit.timeit(load_lorem2, number=1)
     timeXXL = "{:f}".format(timeXXL)
     print("Tiempo para cargar de disco duro a RAM 1.18GB: " + timeXXL)
 
 
     # Draw the graphic of each time
-    graficar([404, 586, 1180], [int(timeL), int(timeXL), int(timeXXL)], 'Datos pesados', 'r')
+    graficar([404, 586, 1180], [float(timeL), float(timeXL), float(timeXXL)], 'Datos pesados', 'r')
 
 
 """
@@ -352,7 +354,7 @@ Testing
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 """
 
-# This location
+"""# This location
 draw_info_test1(ultra_mini)
 draw_info_test1(mini)
 draw_info_test1(small)
@@ -369,7 +371,7 @@ draw_info_test_other(small)
 draw_info_test_other(kilobyte)
 draw_info_test_other(medium_small)
 draw_info_test_other(medium)
-draw_info_test_other(megabyte)
+draw_info_test_other(megabyte)"""
 
 # Big data
 print("\n\n")
