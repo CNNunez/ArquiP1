@@ -4,7 +4,7 @@ import math
 import random
 
 #Global
-num = 1000;
+num = 100000;
 
 def graficar(lista_n, lista_y, titulo, color):
     plt.plot(lista_n,lista_y,'-',linewidth=3,color=color)
