@@ -57,7 +57,7 @@ def main():
         Operaciones(lista1,lista2);
         end = timer();
         time = (end-start);
-        tiempos.append(time);
+        tiempos.append(round(time,5));
         reps.append(i);
     
     graficar(reps,tiempos,"Prueba A",'r');
